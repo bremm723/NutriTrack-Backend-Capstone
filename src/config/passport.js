@@ -1,3 +1,5 @@
+import passport from 'passport';
+
 async (accessToken, refreshToken, profile, done) => {
   try {
     console.log("PROFILE:", profile); // DEBUG
@@ -28,3 +30,5 @@ async (accessToken, refreshToken, profile, done) => {
     return done(error, null);
   }
 }
+
+export default passport;
