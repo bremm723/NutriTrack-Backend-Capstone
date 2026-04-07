@@ -13,7 +13,7 @@ export const addTracking = async (req, res) => {
     res.json(tracking);
   } catch (error) {
     res.status(500).json({ error: error.message });
-  }
+  }   
 };
 
 export const getTracking = async (req, res) => {
